@@ -1,0 +1,67 @@
+{
+  "version": 3,
+  "id": "deck",
+  "name": "Pool deck (motion test)",
+  "viewer": {
+    "fovDegrees": 75,
+    "minFovDegrees": 40,
+    "maxFovDegrees": 95,
+    "maxPitchDegrees": 85,
+    "fadeMs": 400,
+    "eyeHeightM": 1.6
+  },
+  "plan": {
+    "image": "media/deck/plan.jpg",
+    "widthM": 38,
+    "heightM": 28.5
+  },
+  "variants": [
+    {
+      "id": "day",
+      "name": "Day"
+    }
+  ],
+  "defaultVariantId": "day",
+  "rooms": [
+    {
+      "id": "deck",
+      "name": "Pool deck"
+    }
+  ],
+  "points": [
+    {
+      "id": "deck-a",
+      "roomId": "deck",
+      "xM": 19.02,
+      "yM": 7.75,
+      "panoramas": {
+        "day": "media/deck/day/deck-a.jpg"
+      },
+      "headingOffsetDegrees": 0,
+      "motion": {
+        "day": [
+          {
+            "id": "left",
+            "video": "media/deck/day/deck-a-left.mp4",
+            "headingDegrees": 130,
+            "pitchDegrees": 0,
+            "widthDegrees": 110,
+            "heightDegrees": 77.57,
+            "featherDegrees": 4
+          },
+          {
+            "id": "right",
+            "video": "media/deck/day/deck-a-right.mp4",
+            "headingDegrees": 230,
+            "pitchDegrees": 0,
+            "widthDegrees": 110,
+            "heightDegrees": 77.57,
+            "featherDegrees": 4
+          }
+        ]
+      }
+    }
+  ],
+  "connections": [],
+  "startPointId": "deck-a"
+}

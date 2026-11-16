@@ -1,12 +1,12 @@
 {
-  "version": 3,
+  "version": 4,
   "id": "tower",
   "name": "Twin Towers (test)",
   "viewer": {
     "stillFadeMs": 300
   },
   "views": [
-    { "id": "north", "name": "North", "still": "media/tower/north.jpg", "floorMap": "media/tower/north-floors.png" },
+    { "id": "north", "name": "North", "still": "media/tower/north.jpg", "floorMap": "media/tower/north-floors.png", "loop": "media/tower/north-loop.mp4" },
     { "id": "east", "name": "East", "still": "media/tower/east.jpg", "floorMap": "media/tower/east-floors.png" },
     { "id": "south", "name": "South", "still": "media/tower/south.jpg", "floorMap": "media/tower/south-floors.png" },
     { "id": "west", "name": "West", "still": "media/tower/west.jpg", "floorMap": "media/tower/west-floors.png" }
