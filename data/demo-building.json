@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "id": "demo",
+  "name": "Demo building",
+  "viewer": {
+    "stillFadeMs": 300
+  },
+  "views": [
+    { "id": "front", "name": "Front", "still": "media/demo-building/front.jpg" },
+    { "id": "east", "name": "East", "still": "media/demo-building/east.jpg" },
+    { "id": "back", "name": "Back", "still": "media/demo-building/back.jpg" },
+    { "id": "west", "name": "West", "still": "media/demo-building/west.jpg" }
+  ],
+  "transitions": [
+    { "from": "front", "to": "east", "video": "media/demo-building/front-to-east.mp4", "drag": "left" },
+    { "from": "east", "to": "front", "video": "media/demo-building/east-to-front.mp4", "drag": "right" },
+    { "from": "east", "to": "back", "video": "media/demo-building/east-to-back.mp4", "drag": "left" },
+    { "from": "back", "to": "east", "video": "media/demo-building/back-to-east.mp4", "drag": "right" },
+    { "from": "back", "to": "west", "video": "media/demo-building/back-to-west.mp4", "drag": "left" },
+    { "from": "west", "to": "back", "video": "media/demo-building/west-to-back.mp4", "drag": "right" },
+    { "from": "west", "to": "front", "video": "media/demo-building/west-to-front.mp4", "drag": "left" },
+    { "from": "front", "to": "west", "video": "media/demo-building/front-to-west.mp4", "drag": "right" }
+  ],
+  "startViewId": "front",
+  "tours": [
+    { "tourId": "flat1", "name": "Flat 1 (test)" }
+  ]
+}

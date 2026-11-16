@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="1000" height="800">
+  <rect width="100%" height="100%" fill="#e9e4d9"/>
+  <rect x="0" y="350" width="600" height="450" fill="rgb(196,164,124)" stroke="#3a3a3a" stroke-width="8"/>
+  <line x1="8" y1="358" x2="592" y2="358" stroke="rgb(200,214,230)" stroke-width="8"/>
+  <line x1="592" y1="358" x2="592" y2="792" stroke="rgb(206,226,204)" stroke-width="8"/>
+  <line x1="8" y1="792" x2="592" y2="792" stroke="rgb(232,206,200)" stroke-width="8"/>
+  <line x1="8" y1="358" x2="8" y2="792" stroke="rgb(232,224,190)" stroke-width="8"/>
+  <text x="300" y="402" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#2a2a2a">Living room</text>
+  <rect x="600" y="350" width="400" height="450" fill="rgb(196,164,124)" stroke="#3a3a3a" stroke-width="8"/>
+  <line x1="608" y1="358" x2="992" y2="358" stroke="rgb(200,214,230)" stroke-width="8"/>
+  <line x1="992" y1="358" x2="992" y2="792" stroke="rgb(206,226,204)" stroke-width="8"/>
+  <line x1="608" y1="792" x2="992" y2="792" stroke="rgb(232,206,200)" stroke-width="8"/>
+  <line x1="608" y1="358" x2="608" y2="792" stroke="rgb(232,224,190)" stroke-width="8"/>
+  <text x="800" y="402" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#2a2a2a">Kitchen</text>
+  <rect x="0" y="0" width="500" height="350" fill="rgb(196,164,124)" stroke="#3a3a3a" stroke-width="8"/>
+  <line x1="8" y1="8" x2="492" y2="8" stroke="rgb(200,214,230)" stroke-width="8"/>
+  <line x1="492" y1="8" x2="492" y2="342" stroke="rgb(206,226,204)" stroke-width="8"/>
+  <line x1="8" y1="342" x2="492" y2="342" stroke="rgb(232,206,200)" stroke-width="8"/>
+  <line x1="8" y1="8" x2="8" y2="342" stroke="rgb(232,224,190)" stroke-width="8"/>
+  <text x="250" y="52" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#2a2a2a">Bedroom</text>
+  <rect x="500" y="0" width="250" height="350" fill="rgb(196,164,124)" stroke="#3a3a3a" stroke-width="8"/>
+  <line x1="508" y1="8" x2="742" y2="8" stroke="rgb(200,214,230)" stroke-width="8"/>
+  <line x1="742" y1="8" x2="742" y2="342" stroke="rgb(206,226,204)" stroke-width="8"/>
+  <line x1="508" y1="342" x2="742" y2="342" stroke="rgb(232,206,200)" stroke-width="8"/>
+  <line x1="508" y1="8" x2="508" y2="342" stroke="rgb(232,224,190)" stroke-width="8"/>
+  <text x="625" y="52" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#2a2a2a">Bathroom</text>
+  <rect x="750" y="0" width="250" height="350" fill="rgb(196,164,124)" stroke="#3a3a3a" stroke-width="8"/>
+  <line x1="758" y1="8" x2="992" y2="8" stroke="rgb(200,214,230)" stroke-width="8"/>
+  <line x1="992" y1="8" x2="992" y2="342" stroke="rgb(206,226,204)" stroke-width="8"/>
+  <line x1="758" y1="342" x2="992" y2="342" stroke="rgb(232,206,200)" stroke-width="8"/>
+  <line x1="758" y1="8" x2="758" y2="342" stroke="rgb(232,224,190)" stroke-width="8"/>
+  <text x="875" y="52" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#2a2a2a">Entry</text>
+</svg>

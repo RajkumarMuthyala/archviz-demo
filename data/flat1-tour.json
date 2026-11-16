@@ -1,0 +1,200 @@
+{
+  "version": 2,
+  "id": "flat1",
+  "name": "Flat 1 (test)",
+  "viewer": {
+    "fovDegrees": 75,
+    "minFovDegrees": 40,
+    "maxFovDegrees": 95,
+    "maxPitchDegrees": 85,
+    "fadeMs": 400,
+    "eyeHeightM": 1.6
+  },
+  "plan": {
+    "image": "media/flat1/plan.jpg",
+    "widthM": 15.2,
+    "heightM": 11.4
+  },
+  "variants": [
+    {
+      "id": "day",
+      "name": "Day"
+    },
+    {
+      "id": "day-cool",
+      "name": "Day cooler"
+    },
+    {
+      "id": "night",
+      "name": "Night"
+    }
+  ],
+  "defaultVariantId": "day",
+  "rooms": [
+    {
+      "id": "living",
+      "name": "Living room"
+    },
+    {
+      "id": "kitchen",
+      "name": "Kitchen"
+    },
+    {
+      "id": "entry",
+      "name": "Entry"
+    },
+    {
+      "id": "bedroom",
+      "name": "Bedroom"
+    },
+    {
+      "id": "closet",
+      "name": "Closet"
+    },
+    {
+      "id": "bathroom",
+      "name": "Bathroom"
+    },
+    {
+      "id": "balcony",
+      "name": "Balcony"
+    }
+  ],
+  "points": [
+    {
+      "id": "balcony-a",
+      "roomId": "balcony",
+      "xM": 2.91,
+      "yM": 5.98,
+      "panoramas": {
+        "day": "media/flat1/day/balcony-a.jpg",
+        "day-cool": "media/flat1/day-cool/balcony-a.jpg",
+        "night": "media/flat1/night/balcony-a.jpg"
+      },
+      "headingOffsetDegrees": 0
+    },
+    {
+      "id": "bathroom-a",
+      "roomId": "bathroom",
+      "xM": 11.8,
+      "yM": 2.27,
+      "panoramas": {
+        "day": "media/flat1/day/bathroom-a.jpg",
+        "day-cool": "media/flat1/day-cool/bathroom-a.jpg",
+        "night": "media/flat1/night/bathroom-a.jpg"
+      },
+      "headingOffsetDegrees": 0
+    },
+    {
+      "id": "bedroom-a",
+      "roomId": "bedroom",
+      "xM": 7.67,
+      "yM": 3.8,
+      "panoramas": {
+        "day": "media/flat1/day/bedroom-a.jpg",
+        "day-cool": "media/flat1/day-cool/bedroom-a.jpg",
+        "night": "media/flat1/night/bedroom-a.jpg"
+      },
+      "headingOffsetDegrees": 0
+    },
+    {
+      "id": "closet-a",
+      "roomId": "closet",
+      "xM": 9.43,
+      "yM": 2.3,
+      "panoramas": {
+        "day": "media/flat1/day/closet-a.jpg",
+        "day-cool": "media/flat1/day-cool/closet-a.jpg",
+        "night": "media/flat1/night/closet-a.jpg"
+      },
+      "headingOffsetDegrees": 0
+    },
+    {
+      "id": "entry-a",
+      "roomId": "entry",
+      "xM": 11.73,
+      "yM": 5,
+      "panoramas": {
+        "day": "media/flat1/day/entry-a.jpg",
+        "day-cool": "media/flat1/day-cool/entry-a.jpg",
+        "night": "media/flat1/night/entry-a.jpg"
+      },
+      "headingOffsetDegrees": 0
+    },
+    {
+      "id": "kitchen-a",
+      "roomId": "kitchen",
+      "xM": 11.38,
+      "yM": 7.1,
+      "panoramas": {
+        "day": "media/flat1/day/kitchen-a.jpg",
+        "day-cool": "media/flat1/day-cool/kitchen-a.jpg",
+        "night": "media/flat1/night/kitchen-a.jpg"
+      },
+      "headingOffsetDegrees": 0
+    },
+    {
+      "id": "living-a",
+      "roomId": "living",
+      "xM": 6.02,
+      "yM": 5.88,
+      "panoramas": {
+        "day": "media/flat1/day/living-a.jpg",
+        "day-cool": "media/flat1/day-cool/living-a.jpg",
+        "night": "media/flat1/night/living-a.jpg"
+      },
+      "headingOffsetDegrees": 0
+    },
+    {
+      "id": "living-b",
+      "roomId": "living",
+      "xM": 8.09,
+      "yM": 6.05,
+      "panoramas": {
+        "day": "media/flat1/day/living-b.jpg",
+        "day-cool": "media/flat1/day-cool/living-b.jpg",
+        "night": "media/flat1/night/living-b.jpg"
+      },
+      "headingOffsetDegrees": 0
+    }
+  ],
+  "connections": [
+    [
+      "balcony-a",
+      "living-a"
+    ],
+    [
+      "bathroom-a",
+      "closet-a"
+    ],
+    [
+      "bedroom-a",
+      "closet-a"
+    ],
+    [
+      "bedroom-a",
+      "living-b"
+    ],
+    [
+      "entry-a",
+      "kitchen-a"
+    ],
+    [
+      "entry-a",
+      "living-a"
+    ],
+    [
+      "entry-a",
+      "living-b"
+    ],
+    [
+      "kitchen-a",
+      "living-b"
+    ],
+    [
+      "living-a",
+      "living-b"
+    ]
+  ],
+  "startPointId": "living-a"
+}
