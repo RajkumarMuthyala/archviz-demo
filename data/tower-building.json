@@ -1,9 +1,10 @@
 {
-  "version": 6,
+  "version": 8,
   "id": "tower",
   "name": "Twin Towers (test)",
   "viewer": {
-    "stillFadeMs": 300
+    "stillFadeMs": 300,
+    "floorsPerBand": 5
   },
   "views": [
     { "id": "north", "name": "North", "still": "media/tower/north.jpg", "floorMap": "media/tower/north-floors.png", "loop": "media/tower/north-loop.mp4" },
@@ -34,61 +35,172 @@
     ]
   },
   "startViewId": "north",
+  "podium": {
+    "name": "Podium",
+    "pins": {
+      "east": {
+        "x": 0.5026,
+        "y": 0.8231
+      },
+      "south": {
+        "x": 0.4974,
+        "y": 0.8231
+      },
+      "west": {
+        "x": 0.4755,
+        "y": 0.7991
+      }
+    },
+    "amenitiesFile": "data/tower-amenities.json"
+  },
+  "towers": [
+    {
+      "id": "1",
+      "name": "Tower 1",
+      "pins": {
+        "north": {
+          "x": 0.4528,
+          "y": 0.1579
+        },
+        "east": {
+          "x": 0.5472,
+          "y": 0.1579
+        },
+        "south": {
+          "x": 0.5439,
+          "y": 0.1016
+        },
+        "west": {
+          "x": 0.4561,
+          "y": 0.1016
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "Tower 2",
+      "pins": {
+        "north": {
+          "x": 0.5424,
+          "y": 0.2197
+        },
+        "east": {
+          "x": 0.4576,
+          "y": 0.2197
+        },
+        "south": {
+          "x": 0.4545,
+          "y": 0.2826
+        },
+        "west": {
+          "x": 0.5455,
+          "y": 0.2826
+        }
+      }
+    }
+  ],
   "floors": [
-    { "id": "floor-1", "name": "Floor 1", "mapValue": 5 },
-    { "id": "floor-2", "name": "Floor 2", "mapValue": 10 },
-    { "id": "floor-3", "name": "Floor 3", "mapValue": 15 },
-    { "id": "floor-4", "name": "Floor 4", "mapValue": 20 },
-    { "id": "floor-5", "name": "Floor 5", "mapValue": 25 },
-    { "id": "floor-6", "name": "Floor 6", "mapValue": 30 },
-    { "id": "floor-7", "name": "Floor 7", "mapValue": 35 },
-    { "id": "floor-8", "name": "Floor 8", "mapValue": 40 },
-    { "id": "floor-9", "name": "Floor 9", "mapValue": 45 },
-    { "id": "floor-10", "name": "Floor 10", "mapValue": 50 },
-    { "id": "floor-11", "name": "Floor 11", "mapValue": 55 },
-    { "id": "floor-12", "name": "Floor 12", "mapValue": 60 },
-    { "id": "floor-13", "name": "Floor 13", "mapValue": 65 },
-    { "id": "floor-14", "name": "Floor 14", "mapValue": 70 },
-    { "id": "floor-15", "name": "Floor 15", "mapValue": 75 },
-    { "id": "floor-16", "name": "Floor 16", "mapValue": 80 },
-    { "id": "floor-17", "name": "Floor 17", "mapValue": 85 },
-    { "id": "floor-18", "name": "Floor 18", "mapValue": 90 },
-    { "id": "floor-19", "name": "Floor 19", "mapValue": 95 },
-    { "id": "floor-20", "name": "Floor 20", "mapValue": 100 },
-    { "id": "floor-21", "name": "Floor 21", "mapValue": 105 },
-    { "id": "floor-22", "name": "Floor 22", "mapValue": 110 },
-    { "id": "floor-23", "name": "Floor 23", "mapValue": 115 },
-    { "id": "floor-24", "name": "Floor 24", "mapValue": 120 },
-    { "id": "floor-25", "name": "Floor 25", "mapValue": 125 },
-    { "id": "floor-26", "name": "Floor 26", "mapValue": 130 },
-    { "id": "floor-27", "name": "Floor 27", "mapValue": 135 },
-    { "id": "floor-28", "name": "Floor 28", "mapValue": 140 },
-    { "id": "floor-29", "name": "Floor 29", "mapValue": 145 },
-    { "id": "floor-30", "name": "Floor 30", "mapValue": 150 },
-    { "id": "floor-31", "name": "Floor 31", "mapValue": 155 },
-    { "id": "floor-32", "name": "Floor 32", "mapValue": 160 },
-    { "id": "floor-33", "name": "Floor 33", "mapValue": 165 },
-    { "id": "floor-34", "name": "Floor 34", "mapValue": 170 },
-    { "id": "floor-35", "name": "Floor 35", "mapValue": 175 },
-    { "id": "floor-36", "name": "Floor 36", "mapValue": 180 },
-    { "id": "floor-37", "name": "Floor 37", "mapValue": 185 },
-    { "id": "floor-38", "name": "Floor 38", "mapValue": 190 },
-    { "id": "floor-39", "name": "Floor 39", "mapValue": 195 },
-    { "id": "floor-40", "name": "Floor 40", "mapValue": 200 },
-    { "id": "floor-41", "name": "Floor 41", "mapValue": 205 },
-    { "id": "floor-42", "name": "Floor 42", "mapValue": 210 },
-    { "id": "floor-43", "name": "Floor 43", "mapValue": 215 },
-    { "id": "floor-44", "name": "Floor 44", "mapValue": 220 },
-    { "id": "floor-45", "name": "Floor 45", "mapValue": 225 },
-    { "id": "floor-46", "name": "Floor 46", "mapValue": 230 },
-    { "id": "floor-47", "name": "Floor 47", "mapValue": 235 },
-    { "id": "floor-48", "name": "Floor 48", "mapValue": 240 },
-    { "id": "floor-49", "name": "Floor 49", "mapValue": 245 },
-    { "id": "floor-50", "name": "Floor 50", "mapValue": 250 },
-    { "id": "floor-51", "name": "Floor 51", "mapValue": 255 }
+    { "id": "podium-floor-1", "name": "Floor 1", "mapValue": 2 },
+    { "id": "podium-floor-2", "name": "Floor 2", "mapValue": 4 },
+    { "id": "podium-floor-3", "name": "Floor 3", "mapValue": 6 },
+    { "id": "podium-floor-4", "name": "Floor 4", "mapValue": 8 },
+    { "id": "podium-floor-5", "name": "Floor 5", "mapValue": 10 },
+    { "id": "t1-floor-6", "name": "Floor 6", "towerId": "1", "mapValue": 12 },
+    { "id": "t1-floor-7", "name": "Floor 7", "towerId": "1", "mapValue": 14 },
+    { "id": "t1-floor-8", "name": "Floor 8", "towerId": "1", "mapValue": 16 },
+    { "id": "t1-floor-9", "name": "Floor 9", "towerId": "1", "mapValue": 18 },
+    { "id": "t1-floor-10", "name": "Floor 10", "towerId": "1", "mapValue": 20 },
+    { "id": "t1-floor-11", "name": "Floor 11", "towerId": "1", "mapValue": 22 },
+    { "id": "t1-floor-12", "name": "Floor 12", "towerId": "1", "mapValue": 24 },
+    { "id": "t1-floor-13", "name": "Floor 13", "towerId": "1", "mapValue": 26 },
+    { "id": "t1-floor-14", "name": "Floor 14", "towerId": "1", "mapValue": 28 },
+    { "id": "t1-floor-15", "name": "Floor 15", "towerId": "1", "mapValue": 30 },
+    { "id": "t1-floor-16", "name": "Floor 16", "towerId": "1", "mapValue": 32 },
+    { "id": "t1-floor-17", "name": "Floor 17", "towerId": "1", "mapValue": 34 },
+    { "id": "t1-floor-18", "name": "Floor 18", "towerId": "1", "mapValue": 36 },
+    { "id": "t1-floor-19", "name": "Floor 19", "towerId": "1", "mapValue": 38 },
+    { "id": "t1-floor-20", "name": "Floor 20", "towerId": "1", "mapValue": 40 },
+    { "id": "t1-floor-21", "name": "Floor 21", "towerId": "1", "mapValue": 42 },
+    { "id": "t1-floor-22", "name": "Floor 22", "towerId": "1", "mapValue": 44 },
+    { "id": "t1-floor-23", "name": "Floor 23", "towerId": "1", "mapValue": 46 },
+    { "id": "t1-floor-24", "name": "Floor 24", "towerId": "1", "mapValue": 48 },
+    { "id": "t1-floor-25", "name": "Floor 25", "towerId": "1", "mapValue": 50 },
+    { "id": "t1-floor-26", "name": "Floor 26", "towerId": "1", "mapValue": 52 },
+    { "id": "t1-floor-27", "name": "Floor 27", "towerId": "1", "mapValue": 54 },
+    { "id": "t1-floor-28", "name": "Floor 28", "towerId": "1", "mapValue": 56 },
+    { "id": "t1-floor-29", "name": "Floor 29", "towerId": "1", "mapValue": 58 },
+    { "id": "t1-floor-30", "name": "Floor 30", "towerId": "1", "mapValue": 60 },
+    { "id": "t1-floor-31", "name": "Floor 31", "towerId": "1", "mapValue": 62 },
+    { "id": "t1-floor-32", "name": "Floor 32", "towerId": "1", "mapValue": 64 },
+    { "id": "t1-floor-33", "name": "Floor 33", "towerId": "1", "mapValue": 66 },
+    { "id": "t1-floor-34", "name": "Floor 34", "towerId": "1", "mapValue": 68 },
+    { "id": "t1-floor-35", "name": "Floor 35", "towerId": "1", "mapValue": 70 },
+    { "id": "t1-floor-36", "name": "Floor 36", "towerId": "1", "mapValue": 72 },
+    { "id": "t1-floor-37", "name": "Floor 37", "towerId": "1", "mapValue": 74 },
+    { "id": "t1-floor-38", "name": "Floor 38", "towerId": "1", "mapValue": 76 },
+    { "id": "t1-floor-39", "name": "Floor 39", "towerId": "1", "mapValue": 78 },
+    { "id": "t1-floor-40", "name": "Floor 40", "towerId": "1", "mapValue": 80 },
+    { "id": "t1-floor-41", "name": "Floor 41", "towerId": "1", "mapValue": 82 },
+    { "id": "t1-floor-42", "name": "Floor 42", "towerId": "1", "mapValue": 84 },
+    { "id": "t1-floor-43", "name": "Floor 43", "towerId": "1", "mapValue": 86 },
+    { "id": "t1-floor-44", "name": "Floor 44", "towerId": "1", "mapValue": 88 },
+    { "id": "t1-floor-45", "name": "Floor 45", "towerId": "1", "mapValue": 90 },
+    { "id": "t1-floor-46", "name": "Floor 46", "towerId": "1", "mapValue": 92 },
+    { "id": "t1-floor-47", "name": "Floor 47", "towerId": "1", "mapValue": 94 },
+    { "id": "t1-floor-48", "name": "Floor 48", "towerId": "1", "mapValue": 96 },
+    { "id": "t1-floor-49", "name": "Floor 49", "towerId": "1", "mapValue": 98 },
+    { "id": "t1-floor-50", "name": "Floor 50", "towerId": "1", "mapValue": 100 },
+    { "id": "t1-floor-51", "name": "Floor 51", "towerId": "1", "mapValue": 102 },
+    { "id": "t1-floor-52", "name": "Floor 52", "towerId": "1", "mapValue": 104 },
+    { "id": "t1-floor-53", "name": "Floor 53", "towerId": "1", "mapValue": 106 },
+    { "id": "t1-floor-54", "name": "Floor 54", "towerId": "1", "mapValue": 108 },
+    { "id": "t1-floor-55", "name": "Floor 55", "towerId": "1", "mapValue": 110 },
+    { "id": "t1-floor-56", "name": "Floor 56", "towerId": "1", "mapValue": 112 },
+    { "id": "t2-floor-6", "name": "Floor 6", "towerId": "2", "mapValue": 114 },
+    { "id": "t2-floor-7", "name": "Floor 7", "towerId": "2", "mapValue": 116 },
+    { "id": "t2-floor-8", "name": "Floor 8", "towerId": "2", "mapValue": 118 },
+    { "id": "t2-floor-9", "name": "Floor 9", "towerId": "2", "mapValue": 120 },
+    { "id": "t2-floor-10", "name": "Floor 10", "towerId": "2", "mapValue": 122 },
+    { "id": "t2-floor-11", "name": "Floor 11", "towerId": "2", "mapValue": 124 },
+    { "id": "t2-floor-12", "name": "Floor 12", "towerId": "2", "mapValue": 126 },
+    { "id": "t2-floor-13", "name": "Floor 13", "towerId": "2", "mapValue": 128 },
+    { "id": "t2-floor-14", "name": "Floor 14", "towerId": "2", "mapValue": 130 },
+    { "id": "t2-floor-15", "name": "Floor 15", "towerId": "2", "mapValue": 132 },
+    { "id": "t2-floor-16", "name": "Floor 16", "towerId": "2", "mapValue": 134 },
+    { "id": "t2-floor-17", "name": "Floor 17", "towerId": "2", "mapValue": 136 },
+    { "id": "t2-floor-18", "name": "Floor 18", "towerId": "2", "mapValue": 138 },
+    { "id": "t2-floor-19", "name": "Floor 19", "towerId": "2", "mapValue": 140 },
+    { "id": "t2-floor-20", "name": "Floor 20", "towerId": "2", "mapValue": 142 },
+    { "id": "t2-floor-21", "name": "Floor 21", "towerId": "2", "mapValue": 144 },
+    { "id": "t2-floor-22", "name": "Floor 22", "towerId": "2", "mapValue": 146 },
+    { "id": "t2-floor-23", "name": "Floor 23", "towerId": "2", "mapValue": 148 },
+    { "id": "t2-floor-24", "name": "Floor 24", "towerId": "2", "mapValue": 150 },
+    { "id": "t2-floor-25", "name": "Floor 25", "towerId": "2", "mapValue": 152 },
+    { "id": "t2-floor-26", "name": "Floor 26", "towerId": "2", "mapValue": 154 },
+    { "id": "t2-floor-27", "name": "Floor 27", "towerId": "2", "mapValue": 156 },
+    { "id": "t2-floor-28", "name": "Floor 28", "towerId": "2", "mapValue": 158 },
+    { "id": "t2-floor-29", "name": "Floor 29", "towerId": "2", "mapValue": 160 },
+    { "id": "t2-floor-30", "name": "Floor 30", "towerId": "2", "mapValue": 162 },
+    { "id": "t2-floor-31", "name": "Floor 31", "towerId": "2", "mapValue": 164 },
+    { "id": "t2-floor-32", "name": "Floor 32", "towerId": "2", "mapValue": 166 },
+    { "id": "t2-floor-33", "name": "Floor 33", "towerId": "2", "mapValue": 168 },
+    { "id": "t2-floor-34", "name": "Floor 34", "towerId": "2", "mapValue": 170 },
+    { "id": "t2-floor-35", "name": "Floor 35", "towerId": "2", "mapValue": 172 },
+    { "id": "t2-floor-36", "name": "Floor 36", "towerId": "2", "mapValue": 174 },
+    { "id": "t2-floor-37", "name": "Floor 37", "towerId": "2", "mapValue": 176 },
+    { "id": "t2-floor-38", "name": "Floor 38", "towerId": "2", "mapValue": 178 },
+    { "id": "t2-floor-39", "name": "Floor 39", "towerId": "2", "mapValue": 180 },
+    { "id": "t2-floor-40", "name": "Floor 40", "towerId": "2", "mapValue": 182 },
+    { "id": "t2-floor-41", "name": "Floor 41", "towerId": "2", "mapValue": 184 },
+    { "id": "t2-floor-42", "name": "Floor 42", "towerId": "2", "mapValue": 186 },
+    { "id": "t2-floor-43", "name": "Floor 43", "towerId": "2", "mapValue": 188 },
+    { "id": "t2-floor-44", "name": "Floor 44", "towerId": "2", "mapValue": 190 },
+    { "id": "t2-floor-45", "name": "Floor 45", "towerId": "2", "mapValue": 192 },
+    { "id": "t2-floor-46", "name": "Floor 46", "towerId": "2", "mapValue": 194 }
   ],
   "tours": [
-    { "tourId": "flat1", "name": "Flat 1 (test)" }
+    { "tourId": "flat1", "name": "Flat 1 (test)" },
+    { "tourId": "deck", "name": "Pool deck (motion test)" }
   ],
   "unitsFile": "data/tower-units.json"
 }

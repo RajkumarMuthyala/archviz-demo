@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "buildingId": "tower",
+  "notice": "Floor contents here are placeholders, apart from the pool deck. The architect confirms which amenity sits on which floor.",
+  "amenities": [
+    { "id": "entrance-lobby", "name": "Entrance lobby", "floorId": "podium-floor-1", "spot": { "x": 0.4, "y": 0.6 } },
+    { "id": "co-work-lounge", "name": "Co-work lounge", "floorId": "podium-floor-2", "spot": { "x": 0.4, "y": 0.6 } },
+    { "id": "indoor-pool", "name": "Indoor pool", "floorId": "podium-floor-3", "spot": { "x": 0.22, "y": 0.78 } },
+    { "id": "spa-and-sauna", "name": "Spa and sauna", "floorId": "podium-floor-3", "spot": { "x": 0.55, "y": 0.45 } },
+    { "id": "fitness-and-yoga-deck", "name": "Fitness and yoga deck", "floorId": "podium-floor-4", "spot": { "x": 0.36, "y": 0.64 } },
+    { "id": "clubhouse", "name": "Clubhouse", "floorId": "podium-floor-5", "spot": { "x": 0.14, "y": 0.72 } },
+    { "id": "playroom", "name": "Playroom", "floorId": "podium-floor-5", "spot": { "x": 0.42, "y": 0.44 } },
+    { "id": "pool-deck", "name": "Pool deck", "floorId": "podium-floor-5", "spot": { "x": 0.76, "y": 0.42 }, "tourId": "deck" }
+  ]
+}
