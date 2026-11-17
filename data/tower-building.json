@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "id": "tower",
   "name": "Twin Towers (test)",
   "viewer": {
@@ -21,6 +21,18 @@
     { "from": "west", "to": "north", "video": "media/tower/west-to-north.mp4", "drag": "right" },
     { "from": "north", "to": "west", "video": "media/tower/north-to-west.mp4", "drag": "left" }
   ],
+  "orbit": {
+    "video": "media/tower/orbit.mp4",
+    "frameCount": 180,
+    "framesPerSecond": 30,
+    "dragDirection": "right",
+    "stops": [
+      { "viewId": "north", "frame": 0 },
+      { "viewId": "east", "frame": 45 },
+      { "viewId": "south", "frame": 90 },
+      { "viewId": "west", "frame": 135 }
+    ]
+  },
   "startViewId": "north",
   "floors": [
     { "id": "floor-1", "name": "Floor 1", "mapValue": 5 },
