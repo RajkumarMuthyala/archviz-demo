@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "id": "tower",
   "name": "Twin Towers (test)",
   "viewer": {
@@ -7,9 +7,9 @@
   },
   "views": [
     { "id": "north", "name": "North", "still": "media/tower/north.jpg", "floorMap": "media/tower/north-floors.png", "loop": "media/tower/north-loop.mp4" },
-    { "id": "east", "name": "East", "still": "media/tower/east.jpg", "floorMap": "media/tower/east-floors.png" },
-    { "id": "south", "name": "South", "still": "media/tower/south.jpg", "floorMap": "media/tower/south-floors.png" },
-    { "id": "west", "name": "West", "still": "media/tower/west.jpg", "floorMap": "media/tower/west-floors.png" }
+    { "id": "east", "name": "East", "still": "media/tower/orbit/045.webp", "floorMap": "media/tower/east-floors.png" },
+    { "id": "south", "name": "South", "still": "media/tower/orbit/090.webp", "floorMap": "media/tower/south-floors.png" },
+    { "id": "west", "name": "West", "still": "media/tower/orbit/135.webp", "floorMap": "media/tower/west-floors.png" }
   ],
   "transitions": [
     { "from": "north", "to": "east", "video": "media/tower/north-to-east.mp4", "drag": "right" },
@@ -22,10 +22,10 @@
     { "from": "north", "to": "west", "video": "media/tower/north-to-west.mp4", "drag": "left" }
   ],
   "orbit": {
-    "video": "media/tower/orbit.mp4",
+    "frames": "media/tower/orbit/{frame}.webp",
     "frameCount": 180,
-    "framesPerSecond": 30,
     "dragDirection": "right",
+    "loopAtSeconds": 0,
     "stops": [
       { "viewId": "north", "frame": 0 },
       { "viewId": "east", "frame": 45 },
