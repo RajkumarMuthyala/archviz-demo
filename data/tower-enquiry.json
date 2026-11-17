@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "buildingId": "tower",
+  "consentText": "I agree to be contacted about this project.",
+  "privacyNoticeUrl": null,
+  "visitTimes": [
+    { "id": "morning", "name": "Morning" },
+    { "id": "afternoon", "name": "Afternoon" },
+    { "id": "evening", "name": "Evening" }
+  ],
+  "endpoint": null,
+  "whatsappNumber": null,
+  "brochure": null
+}

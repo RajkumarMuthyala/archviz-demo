@@ -1,5 +1,5 @@
 {
-  "version": 8,
+  "version": 9,
   "id": "tower",
   "name": "Twin Towers (test)",
   "viewer": {
@@ -202,5 +202,6 @@
     { "tourId": "flat1", "name": "Flat 1 (test)" },
     { "tourId": "deck", "name": "Pool deck (motion test)" }
   ],
-  "unitsFile": "data/tower-units.json"
+  "unitsFile": "data/tower-units.json",
+  "enquiryFile": "data/tower-enquiry.json"
 }
